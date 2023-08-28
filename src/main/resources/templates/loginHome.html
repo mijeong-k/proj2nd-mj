@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="icon" href="/img/favicon.png">
+    <meta charset="UTF-8">
+    <title>CoCoA_loginHome</title>
+</head>
+<body>
+<div id="wrap">
+    session 값 확인 : <p th:text="${session.user}"></p>
+    <div th:replace="/include/loginHeader.html"></div>
+    <div th:replace="/include/bannerSilde.html"></div>
+    <div th:replace="/include/contents.html"></div>
+</div>
+</body>
+</html>

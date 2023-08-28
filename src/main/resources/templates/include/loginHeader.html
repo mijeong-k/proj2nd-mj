@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cocoa_login</title>
+  <link rel="stylesheet" href="/css/loginHeader.css">
+</head>
+<body>
+<header id="header" class="clearfix">
+  <a href="#"><img src="/img/logo.png" alt="로고이미지"></a>
+  <a href="#" class="sighOut">로그아웃</a>
+  <ul>
+    <li><a href="#"><img src="/img/MyPoket.png" alt="카트_이미지"></a></li>
+    <li><a href="#"><img src="/img/MyPage.png" alt="마이페이지_이미지"></a></li>
+  </ul>
+
+  <div id="header2">
+    <div id="headerMoll">
+      <div id="box0">
+        <form id="TextS"  method="post" name="search" action="#">
+          <input id="search" type="text" placeholder="검색어 입력" name="searchText" maxlength="100">
+          <a href="#"></a>
+        </form>
+      </div><!--검색창-->
+      <div id="headerLeft">
+        <div  id='box1' class="menuBox" onclick="location.href='CoCoA';">코코아(CoCoA)</div>
+        <div id='box2' class="menuBox" onclick="location.href='index.jsp';">강의 목록</div>
+        <div  id='box3' class="menuBox" onclick="location.href='index.jsp';">코움터</div>
+        <div  id='box4' class="menuBox" onclick="location.href='index.jsp';">콩부방</div>
+      </div><!--왼쪽 안쪽-->
+    </div><!-- 왼쪽 바깥쪽-->
+    <script src="/js/BoxHide.js"></script>
+
+
+    <div class="centerS">
+      <h1 class="cocoa">코코아와 함께하는 한 걸음</h1>
+
+      <form class="marginT20" method="post"  name="search" action="#">
+        <input class="centerSe"  type="text"  name="searchText" maxlength="100">
+      </form>
+
+    </div><!--가운데 있는 검색창-->
+  </div><!-- header2-->
+</header>
+</body>
+</html>

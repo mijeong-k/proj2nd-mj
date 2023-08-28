@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cocoa.mapper.FriendMapper">
+
+	<select id="getList" parameterType="com.cocoa.dto.FriendDTO" resultType="com.cocoa.dto.FriendDTO">
+		<![CDATA[
+		select * from FRIEND
+		]]>
+	</select>
+
+	<insert id="save" parameterType="com.cocoa.dto.FriendDTO" >
+		INSERT INTO FRIEND
+		(
+		 F_NAME
+		,F_EMAIL
+		,F_PASSWORD
+		,F_PHONE
+		,F_JOB
+		)
+		VALUES
+		(
+		#{fName}
+		, #{fEmail}
+		, #{fPassword}
+		, #{fPhone}
+		, #{fJob}
+		)
+
+	</insert>
+
+	<select id="login" parameterType="com.cocoa.dto.FriendDTO" resultType="integer">
+		SELECT * FROM FRIEND
+	    WHERE
+	    F_EMAIL = #{fEmail} AND F_PASSWORD = #{fPassword}
+
+	</select>
+
+
+</mapper>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/img/favicon.png">
+    <meta charset="UTF-8">
+    <title>CoCoA</title>
+    <link rel="stylesheet" href="/css/cocoa.css">
+</head>
+
+
+
+
+
+<body>
+
+
+<div id="wrap">
+    <header id="header" class="clearfix">
+        <div class="reading">
+            <a onclick='hello()'><img src="/img/readingglasses.png" alt="돋보기"></a>
+        </div>  <!--reading 닫는 박스 -->
+        <div class="logo">
+            <a href="/"><img src="/img/logo.png" alt="logo"></a>
+
+
+        </div><!--logo -->
+
+        <div class="LoginBox">
+            <button class="LButton" id="modalOpenButton" type="button">로그인</button>
+
+            <div id="modalContainer" class="hidden">
+                <div id="modalContent">
+                    <button id="modalCloseButton">닫기</button>
+
+                    <div id="LoginImg"><img src="/img/LoginImg.png"></div>
+
+                    <form id="ID" method="post" name="search" onsubmit="return false">
+                        <input class="IDT" type="text" placeholder="이메일">
+                    </form>
+
+                    <form id="PW" method="post" name="search" onsubmit="return false">
+                        <input class="PWT" type="text" placeholder="비밀번호">
+                    </form>
+
+                    <div id="buttonLogin">
+                        <button id="btnLogin">로그인</button>
+                    </div>
+
+                    <div id="TextBox">
+                        <a>아이디(이메일)찾기</a>
+                        <a class="l"></a>
+                        <a>비밀번호 찾기</a>
+                        <a class="l"></a>
+                        <a>회원가입</a>
+                    </div>
+
+                    <div id="KaKao">
+                        <a href="javascript:kakaoLogin();"><img src="/img/kakao_login.png" alt="카카오계정 로그인"/></a>
+
+                        <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+                        <script src="/js/Modal.js"></script><!--모달창 불러오는 js-->
+                        <script src="/js/kakao.js"></script>
+                    </div>
+                </div>
+            </div>
+
+            <script src="/js/Modal.js"></script>
+            <div class="space"></div>
+            <button class="LButton" type="button" onclick="location.href='Login.html'">회원가입</button>
+        </div><!--LoginBox 닫는 박스 -->
+    </header>
+    <div id="header2">
+        <div id="headerMoll">
+            <div id="box0">
+                <form id="TextS" method="post" name="search" action="#">
+                    <input id="search" type="text" placeholder="검색어 입력" name="searchText" maxlength="100">
+                    <a href="#"></a>
+                </form>
+            </div><!--검색창-->
+            <div id="headerLeft">
+                <div id='box1' class="menuBox" onclick="location.href='CoCoA';">코코아(CoCoA)</div>
+                <div id='box2' class="menuBox" onclick="location.href='index.jsp';">강의 목록</div>
+                <div id='box3' class="menuBox" onclick="location.href='index.jsp';">코움터</div>
+                <div id='box4' class="menuBox" onclick="location.href='index.jsp';">콩부방</div>
+            </div><!--왼쪽 안쪽-->
+        </div><!-- 왼쪽 바깥쪽-->
+        <script src="/js/BoxHide.js"></script>
+
+
+
+    </div>
+
+</div>
+</body>
+</html>
