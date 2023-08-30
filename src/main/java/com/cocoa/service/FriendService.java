@@ -1,13 +1,17 @@
 package com.cocoa.service;
 
 import com.cocoa.dto.FriendDTO;
-import org.springframework.data.jpa.repository.JpaRepository;
+import com.cocoa.dto.LectureinfoDTO;
+import com.cocoa.dto.LoginDTO;
+import com.cocoa.mapper.FriendMapper;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface FriendService {
     public List<FriendDTO> getList(FriendDTO dto);
     void save(FriendDTO friendDTO);
-    boolean login(FriendDTO friendDTO);
+//    boolean login(FriendDTO friendDTO);
+    List<LoginDTO> findAll(LoginDTO ldto);
+
+    List<LectureinfoDTO> getlecturelist();
 }

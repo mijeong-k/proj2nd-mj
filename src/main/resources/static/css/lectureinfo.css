@@ -1,0 +1,48 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: 'NEXON Lv1 Gothic OTF';
+
+}
+li{
+    list-style: none;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+.clearfix::after, .clearfix::before{
+    content: "";
+    display: block;
+    clear: both;
+}
+body{
+    width: 1920px;
+}
+
+
+#wrap{
+}
+
+#banner{
+    position: relative;
+}
+
+.imgclass{
+    position: absolute;
+    z-index: 5;
+}
+
+.bannertitle{
+    position: absolute;
+    z-index: 10;
+}

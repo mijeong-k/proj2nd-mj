@@ -25,7 +25,8 @@ repositories {
 }
 
 dependencies {
-	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+	implementation 'com.dukescript.api:junit-browser-runner:1.0'
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -34,7 +35,7 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 	implementation group: 'com.oracle.database.jdbc', name: 'ojdbc11', version: '21.11.0.0'
-
+	implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.4'
 
 	implementation group: 'com.zaxxer', name: 'HikariCP', version: '2.7.9'

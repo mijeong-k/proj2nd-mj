@@ -30,12 +30,16 @@
 
 	</insert>
 
-	<select id="login" parameterType="com.cocoa.dto.FriendDTO" resultType="integer">
-		SELECT * FROM FRIEND
-	    WHERE
-	    F_EMAIL = #{fEmail} AND F_PASSWORD = #{fPassword}
+<!--	<select id="login" parameterType="com.cocoa.dto.LoginDTO" resultType="int">-->
+<!--		SELECT * FROM FRIEND WHERE F_EMAIL = #{ffEmail} AND F_PASSWORD =#{ffPassword}-->
+<!--	</select>-->
 
+	<select id="findAll" resultType="com.cocoa.dto.LoginDTO">
+		SELECT * FROM FRIEND WHERE F_EMAIL = #{lEMAIL} AND F_PASSWORD =#{lPASSWORD}
 	</select>
 
+	<select id="getlecturelist" parameterType="com.cocoa.mapper.FriendMapper" resultType="com.cocoa.dto.LectureinfoDTO">
+		select * from lectureInfo
+	</select>
 
 </mapper>

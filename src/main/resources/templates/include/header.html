@@ -27,16 +27,18 @@
 
                 <div id="LoginImg"><img src="/img/logo.png" alt="모달창 로고"></div>
 
-                <form action="/loginFriend" method="POST">
+                <div>
                     <div class="ID PW">
-                        <input class="IDT" name=fEmail type="text" placeholder="이메일">
-                        <input class="PWT" name=fPassword type="text" placeholder="비밀번호">
+                        <input class="IDT" id="loginFEmail" type="text" placeholder="이메일">
+                        <input class="PWT" id="loginFPwd" type="text" placeholder="비밀번호">
                     </div>
 
                     <div id="buttonLogin">
-                        <input type="submit" id="btnLogin" value="로그인">
+                        <input type="button" id="btnLogin" onclick="logintry()" method="POST" value="로그인">
                     </div>
-                </form>
+                </div>
+
+
 
                 <div id="TextBox">
                     <a>아이디(이메일)찾기</a>
@@ -94,7 +96,7 @@
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script src="/js/Modal.js"></script><!--모달창 불러오는 js-->
     <script src="/js/kakao.js"></script><!-- 카카오톡 api-->
-    <script src="/js/login/friend.js"></script><!--모달창 불러오는 js-->
+    <script src="js/friendss.js" defer></script><!--모달창 불러오는 js-->
 </header><!--header-->
 
 

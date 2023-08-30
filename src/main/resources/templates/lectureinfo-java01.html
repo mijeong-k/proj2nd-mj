@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lecture Information</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/lectureinfo.css}">
+</head>
+<body>
+<div id="wrap">
+    <div id="banner">
+        <img src="/img/lecturebanner.png" class="imgclass" alt="강의배너이미지">
+        <th:block th:each="list : ${list}">
+        <p th:text="${list.lf_lectureTitle}" class="bannertitle"></p>
+        </th:block>
+    </div>
+    <div id="lectureinfobox">
+        <b>Step 01. 강의소개</b>
+        <div id="lectureinfobox01">
+
+        </div>
+        <div id="lectureinfobox02">
+
+        </div>
+    </div>
+    <div id="lectureteacherbox">
+
+    </div>
+
+    <div id="curriculumrbox">
+
+    </div>
+
+    <div id="reviewbox">
+
+    </div>
+
+    <div id="starbox">
+
+    </div>
+
+</div>
+
+<h1>강의정보 리스트</h1>
+<th:block th:each="list : ${list}">
+    <p>PK: <span th:text="${list.lf_pk}"></span></p>
+    <p>Code: <span th:text="${list.lf_code}"></span></p>
+    <p>Lecture Title: <span th:text="${list.lf_lectureTitle}"></span></p>
+    <p>Lecture Info: <span th:text="${list.lf_lectureinfo}"></span></p>
+    <p>First Skill: <span th:text="${list.lf_firstSkill}"></span></p>
+    <p>Second Skill: <span th:text="${list.lf_secondSkill}"></span></p>
+    <p>Third Skill: <span th:text="${list.lf_thirdSkill}"></span></p>
+    <p>Fourth Skill: <span th:text="${list.lf_forthSkill}"></span></p>
+    <p>Teacher Title: <span th:text="${list.lf_teacherTitle}"></span></p>
+    <p>Teacher Name: <span th:text="${list.lf_teacherName}"></span></p>
+    <p>Teacher Info: <span th:text="${list.lf_teacherInfo}"></span></p>
+    <p>Curriculum First Title: <span th:text="${list.lf_curriculumFirstTitle}"></span></p>
+    <p>Curriculum Second Title: <span th:text="${list.lf_curriculumSecondTitle}"></span></p>
+    <p>Curriculum Third Title: <span th:text="${list.lf_curriculumThirdTitle}"></span></p>
+    <p>Curriculum First Detail One: <span th:text="${list.lf_curriculumFirstDetailOne}"></span></p>
+    <p>Curriculum First Detail Two: <span th:text="${list.lf_curriculumFirstDetailTwo}"></span></p>
+    <p>Curriculum First Detail Three: <span th:text="${list.lf_curriculumFirstDetailThree}"></span></p>
+    <p>Curriculum Second Detail One: <span th:text="${list.lf_curriculumSecondDetailOne}"></span></p>
+    <p>Curriculum Second Detail Two: <span th:text="${list.lf_curriculumSecondDetailTwo}"></span></p>
+    <p>Curriculum Second Detail Three: <span th:text="${list.lf_curriculumSecondDetailThree}"></span></p>
+    <p>Curriculum Third Detail One: <span th:text="${list.lf_curriculumThirdDetailOne}"></span></p>
+    <p>Curriculum Third Detail Two: <span th:text="${list.lf_curriculumSThirdDetailTwo}"></span></p>
+    <p>Curriculum Third Detail Three: <span th:text="${list.lf_curriculumSThirdDetailThree}"></span></p>
+    <p>Review First: <span th:text="${list.lf_reviewFirst}"></span></p>
+    <p>Review First Name: <span th:text="${list.lf_reviewFirstName}"></span></p>
+    <p>Review Second: <span th:text="${list.lf_reviewSecond}"></span></p>
+    <p>Review Second Name: <span th:text="${list.lf_reviewSecondName}"></span></p>
+</th:block>
+</body>
+</html>
+
+</body>
+</html>
