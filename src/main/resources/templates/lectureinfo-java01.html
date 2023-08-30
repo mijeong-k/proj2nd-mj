@@ -6,24 +6,44 @@
     <link rel="stylesheet" type="text/css" th:href="@{/css/lectureinfo.css}">
 </head>
 <body>
-<div id="wrap">
-    <div id="banner">
-        <img src="/img/lecturebanner.png" class="imgclass" alt="강의배너이미지">
+<div id="wrap" class="clearfix">
+    <div id="banner" class="clearfix">
+        <img src="/img/lecturebanner.png" class="bannerimg" alt="강의배너이미지">
         <th:block th:each="list : ${list}">
-        <p th:text="${list.lf_lectureTitle}" class="bannertitle"></p>
+        <h1 th:text="${list.lf_lectureTitle}" class="bannertitle"></h1>
         </th:block>
     </div>
-    <div id="lectureinfobox">
-        <b>Step 01. 강의소개</b>
+
+
+    <div id="lectureinfobox" class="clearfix">
+        <img src="/img/lectureinfobox.png" class="infoboximg" alt="강의소개이미지">
+        <b class="infotitle">Step 01. 강의소개</b>
         <div id="lectureinfobox01">
-
+            <th:block th:each="list : ${list}">
+            <p th:text="${list.lf_lectureTitle}" class="infobox01"> 강의입니다.</p>
+            <p th:text="${list.lf_lectureinfo}" class="infobox02"></p>
+            </th:block>
         </div>
-        <div id="lectureinfobox02">
-
+        <div id="lectureinfobox02" class="clearfix">
+            <p class="infobox02-1">이런걸 배우게 될거에요!</p>
+            <th:block th:each="list : ${list}">
+            <p class="infobox02-2">□ <span th:text="${list.lf_firstSkill}" ></span></p>
+            <p class="infobox02-3">□ <span th:text="${list.lf_secondSkill}"></span></p>
+            <p class="infobox02-4">□ <span th:text="${list.lf_thirdSkill}"></span></p>
+            <p class="infobox02-5">□ <span th:text="${list.lf_forthSkill}"></span></p>
+            </th:block>
         </div>
     </div>
-    <div id="lectureteacherbox">
 
+
+    <div id="lectureteacherbox">
+        <img src="/img/lectureteacherbox.png" class="teacherboximg" alt="강사소개이미지">
+        <b class="teachertitle">Step 02. 강사소개</b>
+        <th:block th:each="list : ${list}">
+            <p class="teacherbox01" th:text="${list.lf_teacherTitle}"></p>
+            <p class="teacherbox02">Hello! <span th:text="${list.lf_teacherName}"></span></p>
+            <p class="teacherbox03" th:text="${list.lf_teacherInfo}"></p>
+        </th:block>
     </div>
 
     <div id="curriculumrbox">

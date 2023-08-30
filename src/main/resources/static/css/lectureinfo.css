@@ -11,6 +11,7 @@
     box-sizing: border-box;
     margin: 0 auto;
     font-family: 'NEXON Lv1 Gothic OTF';
+    /*font-size: 14px;*/
 
 }
 li{
@@ -29,15 +30,18 @@ body{
     width: 1920px;
 }
 
-
 #wrap{
 }
 
+
+
+/*강의배너*/
 #banner{
     position: relative;
+    float: left;
 }
 
-.imgclass{
+.bannerimg{
     position: absolute;
     z-index: 5;
 }
@@ -45,4 +49,165 @@ body{
 .bannertitle{
     position: absolute;
     z-index: 10;
+    width: 400px;
+    color: white;
+    transform: translate(980px, 220px);
+}
+
+
+/*강의소개*/
+#lectureinfobox{
+    position: relative;
+    float: left;
+    /*width: 1200px;*/
+    margin-top: 450px;
+    margin-left: 360px;
+}
+.infoboximg{
+    position: absolute;
+    z-index: 5;
+}
+.infotitle{
+    position: absolute;
+    z-index: 15;
+    transform: translate(60px, 20px);
+    width: 170px;
+    font-size: 15px;
+}
+
+
+/*강의소개 첫번째 박스*/
+#lectureinfobox01{
+    width: 1120px;
+    height: 150px;
+    background-color: #F3F1F1;
+    border-radius: 20px;
+    position: relative;
+    z-index: 5;
+    margin-top: 70px;
+    margin-left: 40px;
+    padding: 20px;
+}
+
+.infobox01{
+    width: 400px;
+    height: 30px;
+    position: absolute;
+    z-index: 10;
+    /*padding-top: 20px;*/
+}
+
+.infobox02{
+    width: 850px;
+    height: 100px;
+    position: absolute;
+    z-index: 10;
+    margin-top: 50px;
+}
+
+/*강의소개 두번째 박스*/
+#lectureinfobox02{
+    width: 1120px;
+    height: 150px;
+    background-color: #F3F1F1;
+    border-radius: 20px;
+    position: relative;
+    z-index: 5;
+    margin-top: 40px;
+    margin-left: 40px;
+    padding: 20px;
+}
+
+.infobox02-1{
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    text-align: center;
+    line-height: 30px;
+    /*padding-top: 20px;*/
+}
+
+.infobox02-2{
+    width: 850px;
+    height: 100px;
+    position: absolute;
+    z-index: 10;
+    margin-top: 50px;
+
+}
+
+.infobox02-3{
+    width: 850px;
+    height: 100px;
+    position: absolute;
+    z-index: 10;
+    margin-top: 80px;
+}
+
+.infobox02-4{
+    width: 850px;
+    height: 100px;
+    position: absolute;
+    z-index: 10;
+    margin-top: 50px;
+    margin-left: 370px;
+}
+
+.infobox02-5{
+    width: 850px;
+    height: 100px;
+    position: absolute;
+    z-index: 10;
+    margin-top: 80px;
+    margin-left: 370px;
+}
+
+
+/*강사소개*/
+#lectureteacherbox{
+    position: relative;
+    float: left;
+    /*width: 1200px;*/
+    margin-top: 970px;
+    margin-left: -1160px;
+}
+.teacherboximg{
+    position: absolute;
+    z-index: 5;
+}
+.teachertitle{
+    position: absolute;
+    z-index: 15;
+    transform: translate(60px, 20px);
+    width: 170px;
+    font-size: 15px;
+}
+.teacherbox01{
+    width: 400px;
+    height: 30px;
+    position: absolute;
+    z-index: 10;
+    margin-top: 60px;
+    margin-left: 40px;
+    /*padding-top: 20px;*/
+}
+
+.teacherbox02{
+    width: 600px;
+    height: 30px;
+    position: absolute;
+    z-index: 10;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.teacherbox03{
+    width: 850px;
+    height: 100px;
+    position: absolute;
+    z-index: 10;
+    margin-top: 130px;
+    margin-left: 40px;
 }
